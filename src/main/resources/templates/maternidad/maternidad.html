@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Maternidad</title>
+    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+</head>
+<body>
+    <div th:insert="layout :: header"></div>
+    
+    <main>
+        <!-- Insertar contenido de maternidad -->
+        <div th:insert="maternidad/fragmentos :: contenidoMaternidad"></div>
+
+        <!-- Insertar formulario de presupuesto reutilizable -->
+        <div th:insert="presupuesto/fragmentos :: formularioPresupuesto"></div>
+    </main>
+
+    <div th:insert="layout :: footer"></div>
+</body>
+</html>

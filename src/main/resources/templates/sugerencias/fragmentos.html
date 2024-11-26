@@ -1,0 +1,41 @@
+<div th:fragment="sugerencias" class="container mt-5">
+    <h2 style="color: #086266;">Programa de Sugerencias</h2>
+    <h5 style="color: #1aabb1;">Nueva Sugerencia</h5>
+    <br>
+    <br>
+    <hr style="border: 1px solid #1aabb1;"/>
+    <br>
+    <form th:action="@{/sugerencias/enviar}" method="post" th:object="${sugerencia}">
+        <div class="form-group">
+            <label for="nombre" style="color: #086266;">Nombre *</label>
+            <input type="text" id="nombre" th:field="*{nombre}" class="form-control" required placeholder="Ingrese su nombre" style="background-color: #1aabb1;"/>
+        </div>
+
+        <div class="form-group">
+            <label for="apellido" style="color: #086266;">Apellido *</label>
+            <input type="text" id="apellido" th:field="*{apellido}" class="form-control" required placeholder="Ingrese su apellido" style="background-color: #1aabb1;"/>
+        </div>
+
+        <div class="form-group">
+            <label for="email" style="color: #086266;">Email *</label>
+            <input type="email" id="email" th:field="*{email}" class="form-control" required placeholder="Ingrese su email" style="background-color: #1aabb1;"/>
+        </div>
+
+        <div class="form-group">
+            <label for="titulo" style="color: #086266;">Título de Sugerencia</label>
+            <input type="text" id="titulo" th:field="*{titulo}" class="form-control" placeholder="Ingrese el título" style="background-color: #1aabb1;"/>
+        </div>
+
+        <div class="form-group">
+            <label for="descripcion" style="color: #086266;">Descripción de la sugerencia *</label>
+            <textarea id="descripcion" th:field="*{descripcion}" class="form-control" required placeholder="Describa su sugerencia" rows="4" style="background-color: #1aabb1;"></textarea>
+        </div>
+        <br>
+        <br>
+        <br>
+
+        <div class="text-center">
+            <button type="submit" class="btn" style="background-color: #1aabb1; color: white;">Enviar</button>
+        </div>
+    </form>
+</div>

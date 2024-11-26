@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <!-- Fragmento del formulario de presupuesto -->
+    <div th:fragment="formularioPresupuesto">
+        <section class="content-section">
+            <h2 class="text-center">Solicite su Presupuesto</h2>
+            <form th:action="@{/presupuesto/enviar}" method="post" th:object="${presupuesto}">
+                <div class="row">
+                    <div class="col-md-6">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" th:field="*{nombre}" class="form-control" required placeholder="Ingrese su nombre" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="apellido">Apellido *</label>
+                        <input type="text" id="apellido" th:field="*{apellido}" class="form-control" required placeholder="Ingrese su apellido" />
+                    </div>
+                </div>
+                <div class="row mt-3">
+                    <div class="col-md-6">
+                        <label for="telefono">Número de Teléfono *</label>
+                        <input type="tel" id="telefono" th:field="*{telefono}" class="form-control" required placeholder="Ingrese su teléfono" />
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" th:field="*{email}" class="form-control" required placeholder="Ingrese su email" />
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
