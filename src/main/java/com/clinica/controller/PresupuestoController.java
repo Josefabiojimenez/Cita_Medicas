@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 @Controller
 public class PresupuestoController {
-
+/*
     @Autowired
     private PresupuestoService presupuestoService;
 
@@ -25,5 +25,5 @@ public class PresupuestoController {
         presupuestoService.guardarPresupuesto(presupuesto);
         model.addAttribute("mensaje", "¡Presupuesto enviado con éxito!");
         return "maternidad"; // Regresa al mismo template con el mensaje
-    }
+    }*/
 }

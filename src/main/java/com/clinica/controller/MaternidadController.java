@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 @Controller
 @RequestMapping("/maternidad")
 public class MaternidadController {
-
+/*
     @Autowired
     private MaternidadService maternidadService;
 
@@ -30,5 +30,5 @@ public class MaternidadController {
         maternidadService.guardarMaternidad(maternidad);
         model.addAttribute("mensaje", "Su solicitud se ha sido enviado exitosamente.");
         return "maternidad/confirmacionMaternidad";
-    }
+    }*/
 }
