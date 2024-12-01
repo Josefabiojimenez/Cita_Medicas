@@ -13,14 +13,12 @@ import org.springframework.transaction.annotation.Transactional;
  * @author dsala
  */
 @Service
-/*Esto es esencial para que funcione*/
 public class CitaServiceImpl implements CitaService {
 
     @Autowired
-    /*Esto es para importar lo que necesitamos*/
     private CitaDao citaDao;
 
-    /*es privado porque nadie fuera de ella deberia usarlo*/
+
 
     @Override
     public List<Cita> getCitas() {

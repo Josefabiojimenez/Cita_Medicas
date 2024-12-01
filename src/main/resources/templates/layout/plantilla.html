@@ -36,16 +36,16 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-home"></i> Inicio</a>
+                        <a class="nav-link" href="/"><i class="fas fa-home"></i> Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-calendar-alt"></i> Agende su Cita</a>
+                        <a class="nav-link" href="/solicitarCita"><i class="fas fa-calendar-alt"></i> Agende su Cita</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-concierge-bell"></i> Servicios</a>
+                        <a class="nav-link" href="/servicios"><i class="fas fa-concierge-bell"></i> Servicios</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fas fa-envelope"></i> Contáctenos</a>
+                        <a class="nav-link" href="/contacto"><i class="fas fa-envelope"></i> Contáctenos</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false"><i class="fas fa-language"></i> ENG|ESP</a>
@@ -70,9 +70,9 @@
                             <li><a class="dropdown-item" href="/"><i class="fas fa-user-plus"></i> REGISTRARSE</a></li>
                             <li><a class="dropdown-item" href="/"><i class="fas fa-users"></i> NUESTRO EQUIPO</a></li>
                             <li><a class="dropdown-item" href="/"><i class="fas fa-dna"></i> MEDICINA GENÉTICA</a></li>
-                            <li><a class="dropdown-item" href="/"><i class="fas fa-syringe"></i> CIRUGÍA GENERAL</a></li>
-                            <!-- Enlace directo a la página de Maternidad -->
-                            <li><a class="dropdown-item" href="/maternidad/presupuesto"><i class="fas fa-baby"></i> MATERNIDAD</a></li>
+                            <li><a class="dropdown-item" href="/cirugiaGeneral"><i class="fas fa-syringe"></i> CIRUGÍA GENERAL</a></li>
+                            <li><a class="dropdown-item" href="/presupuesto"><i class="fas fa-file-invoice"></i> PRESUPUESTO</a></li>
+                            <li><a class="dropdown-item" href="/maternidad"><i class="fas fa-baby"></i> MATERNIDAD</a></li>
                             <li><a class="dropdown-item" href="/"><i class="fas fa-question-circle"></i> PREGUNTAS FRECUENTES</a></li>
                             <li><a class="dropdown-item" href="/sugerencias"><i class="fas fa-comments"></i> SUGERENCIAS</a></li>
                         </ul>
@@ -81,17 +81,6 @@
             </div>
         </nav>
     </header>
-
-<!--confirmación de presupuesto 
-    <div th:if="${mensaje}" class="alert alert-success mt-3 text-center">
-        <p th:text="${mensaje}"></p>
-    </div>-->
-
-    <!--Formulario de Presupuesto -->
-    <div class="container content-section">
-        <div th:insert="maternidad/fragmentos :: formularioPresupuesto"></div>
-    </div>
-
     <footer th:fragment="footer" class="footer text-center">
         <div class="container">
             <p>&copy; 2024 Clínica MediHub. Todos los derechos reservados.</p>
