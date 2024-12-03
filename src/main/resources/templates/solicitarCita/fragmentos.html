@@ -1,7 +1,7 @@
-<div th:fragment="solitarCita" class="container mt-5">
+<div th:fragment="solicitarCita" class="container mt-5">
     <section style="background-color: #ffffff; padding: 20px; border-radius: 5px; border: 1px solid #086266;">
         <h2 style="color: #086266;">Agende su Cita</h2>
-        <form action="/citas" method="POST" style="display: flex; flex-direction: column; gap: 10px;">
+        <form action="/solicitarCita/enviar" method="POST" style="display: flex; flex-direction: column; gap: 10px;">
             <div>
                 <label for="nombre" style="color: #333;">Nombre *</label>
                 <input type="text" id="nombre" name="nombre" required style="padding: 8px; border: 1px solid #086266; border-radius: 4px;">

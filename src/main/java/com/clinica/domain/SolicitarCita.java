@@ -6,7 +6,7 @@ import lombok.Data;
 
 @Data
 @Entity
-@Table(name = "solicitar_cita") 
+@Table(name = "solicitar_cita")
 public class SolicitarCita implements Serializable {
 
     private static final long serialVersionUID = 1L;

@@ -12,12 +12,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 @RequestMapping("/sugerencias")
-public class SugerenciasController1 {
+public class SugerenciasController {
 
     private final SugerenciaService sugerenciaService;
 
     @Autowired
-    public SugerenciasController1(SugerenciaService sugerenciaService) {
+    public SugerenciasController(SugerenciaService sugerenciaService) {
         this.sugerenciaService = sugerenciaService;
     }
 
