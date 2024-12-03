@@ -1,0 +1,14 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layout/plantilla :: head">
+    <title>Maternidad</title>
+    <link th:href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet" />
+</head>
+<body>
+        <header th:replace="layout/plantilla :: header"></header>
+
+        <section th:replace="maternidad/fragmentos :: maternidad"></section>
+
+        <footer th:replace="layout/plantilla :: footer"></footer>
+    </body>
+</html>

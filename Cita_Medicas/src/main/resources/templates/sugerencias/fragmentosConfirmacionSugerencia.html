@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" 
+      xmlns:th="http://www.thymeleaf.org">
+    <head th:replace="layout/plantilla :: head">
+        <title>Clínica MediHub - Confirmación de Sugerencias</title>
+    </head>
+    <body>
+        <header th:replace="layout/plantilla :: header"></header>
+
+        <section th:fragment="confirmacion" class="container mt-5 text-center">
+            <h2 style="color: #086266;">Su sugerencia ha sido enviada</h2>
+            <p style="color: #1aabb1;">
+                <span style="font-size: 50px;">✔️</span> ¡Muchas gracias!
+            </p>
+            <p th:text="${mensaje}"></p>
+            <div style="margin-top: 20px;">
+                <a href="/" class="btn" style="background-color: #1aabb1; color: white;">Volver al Inicio</a>
+            </div>
+        </section>
+
+        <footer th:replace="layout/plantilla :: footer"></footer>
+    </body>
+</html>
