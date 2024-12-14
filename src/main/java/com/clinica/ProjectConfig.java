@@ -41,7 +41,7 @@ public class ProjectConfig implements WebMvcConfigurer {
         return slr;
     }
 
-    /* localeChangeInterceptor se utiliza para crear un interceptor de cambio de idioma */
+    /* localeChangeInterceptor se utiliza para crear un interceptor de cambio de idioma */ /*commit*/
     @Bean
     public LocaleChangeInterceptor localeChangeInterceptor() {
         var lci = new LocaleChangeInterceptor();
