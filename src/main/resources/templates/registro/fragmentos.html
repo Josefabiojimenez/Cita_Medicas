@@ -3,7 +3,7 @@
       xmlns:th="http://www.thymeleaf.org"
       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity6">
     <head th:replace="~{layout/plantilla :: head}">
-        <title>TechShop</title>
+        <title>Registro</title>
     </head>
     <body>
         <!-- 1 Fragmento que se utiliza en la página para regresar -->
@@ -32,10 +32,6 @@
                                 <div class="mb-3">
                                     <label for="nombre">[[#{usuario.nombre}]]</label>
                                     <input type="text" class="form-control" name="nombre" th:field="*{nombre}" required="true"/></div>
-                                <div class="mb-3">
-                                    <label for="apellidos">[[#{usuario.apellidos}]]</label>
-                                    <input type="text" class="form-control" name="apellidos" th:field="*{apellidos}"
-                                           required="true"/></div>
                                 <div class="mb-3">
                                     <label for="email">[[#{usuario.correo}]]</label>
                                     <input type="email" class="form-control" 
@@ -68,10 +64,7 @@
                                 <div class="mb-3">
                                     <label for="nombre">[[#{usuario.nombre}]]</label>
                                     <input type="text" class="form-control" name="nombre" th:field="*{nombre}" required="true"/></div>
-                                <div class="mb-3">
-                                    <label for="apellidos">[[#{usuario.apellidos}]]</label>
-                                    <input type="text" class="form-control" name="apellidos" th:field="*{apellidos}" required="true"/></div>
-                                <div class="mb-3">
+
                                     <label for="email">[[#{usuario.correo}]]</label>
                                     <input type="email" class="form-control" name="correo" th:field="*{correo}" required="true"/></div>
                                 <div class="mb-3">
@@ -80,11 +73,7 @@
                                 <div class="mb-3">
                                     <label for="password">[[#{usuario.password}]]</label>
                                     <input type="password" class="form-control" name="password" th:field="*{password}"/></div>
-                                <div class="mb-3">
-                                    <label for="imagen">[[#{usuario.imagen}]]</label>
-                                    <input class="form-control" type="file" name="imagenFile" onchange="readURL(this);" />
-                                    <img id="blah" th:src="@{${usuario.rutaImagen}}" alt="your image" height="200"/>
-                                </div>                                                
+                                              
                             </div>
                             <div class="card-footer align-items-center">
                                 <button type="submit" class="btn btn-success">

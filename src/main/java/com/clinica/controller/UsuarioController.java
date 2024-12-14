@@ -18,8 +18,6 @@ public class UsuarioController {
     @Autowired
     private UsuarioService usuarioService;
 
-    @Autowired
-    private FirebaseStorageService firebaseStorageService;
 
     @GetMapping("/listado")
     public String listado(Model model) {

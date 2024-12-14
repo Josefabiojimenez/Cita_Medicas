@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://wwww.thymeleaf.org">
-    <head th:replace="~{layout/plantilla :: head}">
-        <title>TechShop</title>
+    <head th:replace="layout/plantilla :: head">
+        <title>Login</title>
         <meta charset="UTF-8"/>
     </head>
     <body>
+        <header th:replace="layout/plantilla :: header"></header>
         <div class="container my-5">
             <div class="row align-items-center"> 
                 <div class="col-md-3"></div>
@@ -33,12 +34,12 @@
                             </form>                            
                         </div>
                     </div>
-                    <div th:if="${param.error != null}">
+                    <div th:if="param.error != null">
                         <h3>[[#{error.login}]]</h3>
                     </div>
                 </div>
             </div>           
         </div>
-        <footer th:replace="~{layout/plantilla :: footer}"/>
+        <footer th:replace="layout/plantilla :: footer"/>
     </body>
 </html>
