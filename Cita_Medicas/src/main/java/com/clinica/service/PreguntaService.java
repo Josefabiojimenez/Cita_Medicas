@@ -1,13 +1,11 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.clinica.service;
 
-/**
- *
- * @author dsala
- */
+import com.clinica.domain.Pregunta;
+import java.util.List;
+
 public interface PreguntaService {
-    
+    List<Pregunta> listarPreguntas();
+    Pregunta obtenerPreguntaPorId(Long id);
+    void guardarPregunta(Pregunta pregunta);
+    void eliminarPregunta(Long id);
 }

@@ -1,13 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
 package com.clinica.dao;
 
-/**
- *
- * @author dsala
- */
-public interface PreguntaDao {
-    
+import com.clinica.domain.Pregunta;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface PreguntaDao extends JpaRepository<Pregunta, Long> {
 }

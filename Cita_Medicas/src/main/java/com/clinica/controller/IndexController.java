@@ -12,5 +12,6 @@ public class IndexController {
         model.addAttribute("titulo", "Bienvenido a Clínica MediHub");
         return "index";
     }
+    
 }
 

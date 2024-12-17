@@ -39,14 +39,4 @@ public class SolicitarCitaController {
         return "solicitarCita/ConfirmacionSolicitarCita";
     }
 
-    /*@PostMapping
-    public String enviarCita(SolicitarCita cita) {
-        solicitarCitaService.guardarCita(cita);
-        return "redirect:/citas/exito"; 
-    }
-
-    @GetMapping("/exito")
-    public String mostrarExito() {
-        return "exito"; 
-    }*/
 }

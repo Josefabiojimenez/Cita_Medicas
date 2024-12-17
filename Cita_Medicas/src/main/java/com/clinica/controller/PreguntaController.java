@@ -1,24 +1,24 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/springframework/Controller.java to edit this template
- */
 package com.clinica.controller;
 
+import com.clinica.domain.Pregunta;
+import com.clinica.service.PreguntaService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 
-/**
- *
- * @author dsala
- */
+import java.util.List;
+
 @Controller
 public class PreguntaController {
-    
-    @RequestMapping("/url")
-    public String page(Model model) {
-        model.addAttribute("attribute", "value");
-        return "view.name";
+
+    @Autowired
+    private PreguntaService preguntaService;
+
+    @GetMapping("/preguntasFrecuentes")
+    public String mostrarPreguntasFrecuentes(Model model) {
+        List<Pregunta> preguntas = preguntaService.listarPreguntas();
+        model.addAttribute("preguntas", preguntas);
+        return "/pregunta";
     }
-    
 }

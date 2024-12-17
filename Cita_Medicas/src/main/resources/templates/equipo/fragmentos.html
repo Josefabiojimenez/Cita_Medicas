@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+    <body>
+        <div th:fragment="equipoFragmento">
+            <div class="col-md-4">
+                <div class="card mb-4 shadow-sm">
+                    <img th:src="@{${miembro.imagen}}" class="bd-placeholder-img card-img-top" width="100%" height="225" alt="Imagen del miembro">
+                    <div class="card-body">
+                        <h5 class="card-title" th:text="${miembro.nombre}">Nombre</h5>
+                        <p class="card-text" th:text="${miembro.especialidad}">Especialidad</p>
+                        <p class="card-text" th:text="${miembro.descripcion}">Descripción</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
